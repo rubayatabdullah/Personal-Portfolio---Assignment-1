@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rubayat Abdullah</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6c0c25e614.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- header-section-start  -->
+     <div id="header">
+        <div class="container">
+            <nav class="navbar">
+                <img src="./images/logo.png" class="logo" alt="rubayat">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#service">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-solid fa-circle-xmark" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fas fa-solid fa-bars" onclick="openMenu()"></i>
+            </nav>
+            <div class="header-section">
+                <div class="header-text">
+                    <p>Front-End Web Developer</p>
+                    <h1>This is <span class="name">Rubayat Abdullah</span> <br> <i class="fa-solid fa-location-dot"></i> Bangladesh</h1>
+                </div>
+                <div class="header-img">
+                    <img src="./images/user-own.png" class="user-img" alt="user">
+                </div>
+            </div>
+        </div>
+     </div>
+    <!-- header-section-end  -->
+
+    <!-- about-section-start  -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./images/user.avif" alt="user">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="about-title">About Me</h1>
+                    <p class="about-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, vero earum labore dolorum eum perferendis quod optio eaque, sit voluptates eius aut commodi tempore, explicabo tenetur impedit. Explicabo impedit nisi deserunt accusamus asperiores fugiat ipsum molestiae veniam maiores facilis ut eveniet, odit quia delectus est veritatis id quam. Obcaecati, autem.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-link active-link">Skills</p>
+                        <p class="tab-link">Experience</p>
+                        <p class="tab-link">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab">
+                        <ul>
+                            <li><span>HTML & CSS</span><br>Designing the web sceleton and style</li>
+                            <li><span>JavaScript</span><br>Make a full responsive website</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents">
+                        <ul>
+                            <li><span>None</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents">
+                        <ul>
+                            <li><span>Studying BSc. in Textile Engineering at BUTEX</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- about-section-ends  -->
+
+    <!-- service-section-start  -->
+    <div id="service">
+        <div class="container">
+            <h1 class="about-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>UI/UX Design to HTML CSS</h2>
+                    <p>I turn UI/UX design to HTML CSS code with responsive design.</p>
+                </div>
+                <div>
+                    <i class="fa-brands fa-js"></i>
+                    <h2>HTML CSS to Dynamic Web</h2>
+                    <p>I make HTML CSS code file responsive by implement JavaScript and it's frameworks</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- service-section-ends  -->
+    
+    <!-- portfolio-section-starts  -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="about-title">My Work</h1>
+            <div class="work-lisk">
+                <p>Nothing Yet. I am working on it</p>
+            </div>
+        </div>
+    </div>
+    <!-- portfolio-section-ends  -->
+    
+    <!-- contact  -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="about-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>rubayatalabdullah@gamil.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+8801885783337</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/iamrubayatabdullah" class="fa-brands fa-facebook"></a>
+                        <a href="https://www.instagram.com/rubayatabdullah/" class="fa-brands fa-square-instagram"></a>
+                        <a href="https://x.com/iamrubayat" class="fa-brands fa-square-x-twitter"></a>
+                        <a href="https://github.com/rubayatabdullah" class="fa-brands fa-github"></a>
+                        <a href="#" class="fa-brands fa-linkedin"></a>
+                    </div>
+                    <a href="./images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message" id=""></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &#169; Rubayat</p>
+        </div>
+    </div>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openMenu() {
+            sidemenu.style.right = "0";
+        }
+        function closeMenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbz3Tvfpl6OSF1F45XcwcQmJQ1_3PVGpz_bGHnRbGpDj8ATwwuLO28dAUGLdmJI4D9DY/exec'
+        const form = document.forms['submit-to-google-sheet']
+
+        form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+        })
+</script>
+
+</body>
+</html>
